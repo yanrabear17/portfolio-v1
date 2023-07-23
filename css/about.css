@@ -1,0 +1,220 @@
+.main .about-container {
+  display: flex;
+  flex-direction: column;
+  grid-row: 3/4;
+  min-height: 900px;
+  background: linear-gradient(var(--primarybg));
+}
+.main .about-container .about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 650px;
+}
+.main .about-container .about-title {
+  display: flex;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+.main .about-container .about-content .profile {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: flex-end;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+.main .about-container > .about-title p {
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.main .about-container > .about-title span {
+  color: blue;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.main .about-container .profile .profile-text {
+  text-align: center;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.main .about-container .profile .profile-text p {
+  color: black;
+  font-weight: 500;
+  margin: 3px;
+  font-size: 16px;
+}
+
+.main .about-container .profile .profile-text h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+}
+.main .about-container .profile .profile-text a {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 22px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 255, 0.8);
+  transition: all 0.3 ease;
+  margin: 10px;
+}
+.main .about-container .profile .profile-text a:hover {
+  background: none;
+  color: rgba(0, 0, 255, 0.8);
+}
+.main .about-container .profile .profile-text span {
+  color: blue;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.main .about-container .profile .profile-text .mypic {
+  margin: 20px;
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+}
+.main .about-container .profile .profile-text .mypic img {
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.main .about-container .profile .profile-text .mypic {
+  display: grid;
+  grid-template-columns: auto;
+}
+.main .about-container .about-content .profile .profile-footer {
+  position: relative;
+  top: 30px;
+  display: grid;
+  grid-template-rows: auto;
+  margin: 0px;
+  justify-content: center;
+  align-self: center;
+}
+
+.main .about-container .about-content .profile .border-line {
+  align-self: flex-end;
+  position: relative;
+  top: 60px;
+  border-top: 3px solid rgb(46, 45, 45);
+}
+.main .about-container .about-content .profile .profile-footer a {
+  color: blue;
+  font-weight: 600;
+  font-size: 22px;
+}
+.main .about-container .about-content .profile .profile-footer span {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+}
+.main .about-container .about-content .profile .profile-footer li {
+  list-style: none;
+}
+
+.main .about-container .about-content .info {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+.main .about-container .about-content .info span {
+  background: rgba(255, 0, 0, 0.87);
+  z-index: 999;
+}
+
+.main .about-container .about-content .info .about-obj p {
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main .about-container .about-content .info h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 28px;
+}
+.main .about-container .about-content i {
+  color: rgba(0, 0, 255, 0.8);
+  font-size: 30px;
+  margin: 5px;
+}
+.main .about-container .about-content .info .about-obj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 70px;
+}
+
+@media (max-width: 1220px) {
+  .main .about-container > .about-title p {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .main .about-container > .about-title span {
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .main .about-container .about-content .profile .profile-footer a {
+    font-size: 18px;
+  }
+  .main .about-container .about-content .profile .profile-footer span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .main .about-container .about-content {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .main .about-container .about-content .profile {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main .about-container .about-content .profile .profile-footer {
+    top: 30px;
+    display: grid;
+    grid-template-rows: auto;
+    margin: 40px;
+    justify-content: center;
+    align-self: center;
+  }
+  .main .about-container .about-content .info {
+    display: grid;
+    height: 200px;
+  }
+  .main .about-container .about-content .info .about-obj p {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .main .about-container .about-title {
+    display: flex;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}

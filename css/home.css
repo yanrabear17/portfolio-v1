@@ -1,0 +1,70 @@
+.main .hero-container {
+  grid-row: 2/3;
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(var(--primarybg));
+}
+.main .hero-container .home-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .hero-container .home-content .hello-text p {
+  font-size: 40px;
+  font-weight: 500;
+}
+.main .hero-container .home-content .name-text p {
+  font-size: 80px;
+  font-weight: 700;
+}
+.main .hero-container .home-content .type-text {
+  font-size: 40px;
+  font-weight: 500;
+}
+.main .hero-container .home-content .type-text span {
+  color: blue;
+}
+
+.main .hero-container .home-content a {
+  width: 30%;
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 255, 0.8);
+  transition: all 0.3 ease;
+}
+.main .hero-container .home-content a:hover {
+  background: none;
+  border-radius: 12px;
+  color: rgba(0, 0, 255, 0.8);
+}
+@media (max-width: 900px) {
+  .main .hero-container .home-content .hello-text p {
+    font-size: 30px;
+  }
+  .main .hero-container .home-content .name-text p {
+    font-size: 60px;
+  }
+  .main .hero-container .home-content .type-text {
+    font-size: 30px;
+  }
+  .main .hero-container .home-content a {
+    display: inline-block;
+    background: blue;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 31px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 255, 0.8);
+    transition: all 0.3 ease;
+  }
+}

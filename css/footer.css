@@ -1,0 +1,16 @@
+.main .footer {
+  height: 35px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: snow;
+  grid-row: 7/8;
+}
+
+.main .footer span {
+  color: snow;
+}
+.main .footer a {
+  color: blue;
+}

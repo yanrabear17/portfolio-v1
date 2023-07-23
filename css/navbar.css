@@ -1,0 +1,297 @@
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+.main .nav-container {
+  transition: 200ms ease-in;
+  top: 0;
+  width: 100%;
+  display: grid;
+  background-color: rgb(34, 161, 187);
+  grid-row: 1/2;
+}
+
+.main .darknav {
+  transition: 200ms ease-in;
+  top: 0;
+  width: 100%;
+  display: grid;
+  background-color: rgb(0, 0, 0);
+  grid-row: 1/2;
+}
+
+.main .sticky {
+  transition: 200ms ease-in;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  background-color: rgb(34, 161, 187);
+  box-shadow: 0px 1px 15px;
+  z-index: 999;
+}
+.main .darksticky {
+  transition: 200ms ease-in;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  background-color: rgb(8, 8, 8);
+  box-shadow: 0px 1px 15px;
+  z-index: 999;
+}
+/*  background-color: #22a6c1; */
+.main .nav-container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .nav-container .navbar .hamburger-container {
+  display: none;
+}
+
+.main .nav-container .navbar .logo-navbar {
+  margin: 0 20px;
+}
+.main .nav-container .navbar .logo-navbar a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.main .nav-container .navbar .logo-navbar a span {
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
+}
+
+.main .nav-container .navbar .menu-navbar {
+  display: flex;
+}
+
+.main .nav-container .navbar .menu-navbar li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+}
+.main .nav-container .navbar .menu-navbar li a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.main .nav-container .navbar .menu-navbar li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: rgba(0, 0, 255, 0.8);
+  transform: scale(0, 1);
+  transition-duration: 0.5s;
+}
+.main .nav-container .navbar .menu-navbar li a:hover::after {
+  width: 100%;
+  transform: scale(1, 1);
+  transition-duration: 0.5s;
+}
+body.darkmode {
+  color: white;
+}
+body.darkmode .main .nav-container .navbar .checkbox i:nth-child(1) {
+  position: relative;
+  left: 25px;
+  font-size: 24px;
+  -webkit-animation: none;
+}
+
+body.darkmode .main .nav-container .navbar .checkbox i:nth-child(2) {
+  position: relative;
+  left: 103px;
+  font-size: 23px;
+  -webkit-animation: rotation 2s infinite linear;
+}
+/* home bg */
+body.darkmode .main .hero-container {
+  background: linear-gradient(var(--primarybgdm));
+}
+/* about bg */
+body.darkmode .main .about-container {
+  background: linear-gradient(var(--primarybgdm));
+}
+/* service bg */
+body.darkmode .main .service-container {
+  background: linear-gradient(var(--primarybgdm));
+}
+/* skills bg */
+body.darkmode .main .skill-container {
+  background: linear-gradient(var(--primarybgdm));
+}
+/* contact bg */
+body.darkmode .main .contact-container {
+  background: linear-gradient(var(--primarybgdm));
+}
+
+body.darkmode a {
+  color: white;
+}
+body.darkmode .main .nav-container .navbar .checkbox i {
+  color: whitesmoke;
+}
+/* about me */
+body.darkmode .main .about-container .about-content .info {
+  background: silver;
+}
+
+body.darkmode .main .about-container .about-content .profile {
+  background: silver;
+}
+/* my service */
+body.darkmode .main .service-container .service-content .service-card .card-1 {
+  background: silver;
+}
+body.darkmode .main .service-container .service-content .service-card .card-2 {
+  background: silver;
+}
+body.darkmode .main .service-container .service-content .service-card .card-3 {
+  background: silver;
+}
+/* my skills */
+body.darkmode .main .skill-container .skill-content .card-right {
+  background: silver;
+}
+/* hamburger  span*/
+body.darkmode .main .nav-container .navbar .hamburger-container span {
+  background: whitesmoke;
+}
+body.darkmode .main .nav-container .navbar .menu-navbar.show {
+  background-color: rgb(3, 3, 3);
+}
+
+body.darkmode .main .skill-container .skill-content .card-left {
+  background: silver;
+}
+.main .nav-container .navbar .checkbox {
+  position: absolute;
+  margin: 0 200px;
+}
+.main .nav-container .navbar .checkbox i:nth-child(1) {
+  position: relative;
+  left: 25px;
+  font-size: 24px;
+  color: black;
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+.main .nav-container .navbar .checkbox i:nth-child(2) {
+  position: relative;
+  left: 103px;
+  font-size: 23px;
+  color: black;
+}
+.main .nav-container .navbar input[type="checkbox"] {
+  cursor: pointer;
+  position: relative;
+  width: 70px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: linear-gradient(
+    0deg,
+    rgba(36, 36, 36, 1) 0%,
+    rgba(65, 65, 66, 1) 25%,
+    rgba(36, 36, 36, 1) 100%
+  );
+  outline-style: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px;
+}
+
+.main .nav-container .navbar input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 20px;
+  box-shadow: 1px 1px 2px 2px;
+  border-radius: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(36, 36, 36, 1) 0%,
+    rgb(128, 126, 126) 25%,
+    rgb(36, 35, 35) 100%
+  );
+  transform: scale(0.98, 0.96);
+  transition: 0.5s;
+}
+
+.main .nav-container .navbar input:checked[type="checkbox"]::before {
+  left: 34px;
+  background: linear-gradient(
+    0deg,
+    rgba(36, 36, 36, 1) 0%,
+    rgb(0, 17, 252) 25%,
+    rgb(36, 35, 35) 100%
+  );
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+.main .nav-container .navbar input[type="checkbox"]:active:before {
+  transform: scale(1, 2);
+}
+@media (max-width: 900px) {
+  .main .nav-container .navbar .hamburger-container {
+    display: block;
+    margin: 20px;
+  }
+
+  .main .nav-container .navbar .hamburger-container span {
+    display: block;
+    height: 4px;
+    width: 36px;
+    background: black;
+    margin: 5px;
+  }
+  .main .nav-container .navbar .menu-navbar {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    display: grid;
+    transform: scale(0.58, 0);
+  }
+  .main .nav-container .navbar .menu-navbar.show {
+    position: fixed;
+    top: 90px;
+    height: 250px;
+    width: 100%;
+    display: grid;
+    transform: scale(1, 1);
+    transition: ease 500ms;
+    background-color: rgb(34, 161, 187);
+  }
+  .main .nav-container .navbar .menu-navbar li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .nav-container .navbar .menu-navbar li:hover {
+    background: rgba(192, 192, 192, 0.315);
+  }
+
+  .main .nav-container .navbar .menu-navbar li a::after {
+    all: unset;
+  }
+}
+
+@media (max-width: 750px) {
+  .main .nav-container .navbar .checkbox {
+    position: absolute;
+    margin: 0 150px;
+  }
+}
+@media (max-width: 430px) {
+  .main .nav-container .navbar .checkbox {
+    position: fixed;
+  }
+}

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("/css/navbar.css");
+@import url("/css/home.css");
+@import url("/css/about.css");
+@import url("/css/service.css");
+@import url("/css/contact.css");
+@import url("/css/footer.css");
+@import url("/css/skills.css");
+
+:root {
+  --primarybgdm: 0deg, rgb(0, 10, 143) 0%, rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 1) 100%;
+  --primarybg: 0deg, rgba(139, 33, 33, 0.938) 0%, rgba(150, 0, 0, 0.726) 20%,
+    rgb(34, 161, 187) 100%;
+}
+body {
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+  color: black;
+}
+a {
+  color: black;
+}
+
+* {
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+button {
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 90px calc(100vh - 90px);
+}
+@media (max-width: 320px) {
+  .main {
+    display: none;
+  }
+}
+@media (max-height: 379px) {
+  .main {
+    display: none;
+  }
+}

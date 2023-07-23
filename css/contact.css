@@ -1,0 +1,206 @@
+.main .contact-container {
+  display: flex;
+  flex-direction: column;
+  height: 1fr;
+  grid-row: 6/7;
+  height: 100%;
+  background: linear-gradient(var(--primarybg));
+}
+.main .contact-container .contact-title {
+  display: flex;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.main .contact-container .contact-title p {
+  font-weight: 700;
+  font-size: 55px;
+}
+.main .contact-container .contact-title span {
+  color: blue;
+  font-weight: 600;
+  font-size: 55px;
+}
+.main .contact-container .contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 20px;
+}
+.main .contact-container .contact-content .contact-text-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* row1 */
+.main .contact-container .contact-content .contact-text-content .row1 {
+  margin: 20px;
+}
+.main .contact-container .contact-content .contact-text-content .row1 i {
+  font-size: 30px;
+}
+.main .contact-container .contact-content .contact-text-content .row1 span {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px;
+}
+.main .contact-container .contact-content .contact-text-content .row1 p {
+  margin: 0px 51px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* row2 */
+.main .contact-container .contact-content .contact-text-content .row2 {
+  margin: 20px;
+}
+.main .contact-container .contact-content .contact-text-content .row2 i {
+  font-size: 30px;
+}
+.main .contact-container .contact-content .contact-text-content .row2 span {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px;
+}
+.main .contact-container .contact-content .contact-text-content .row2 p {
+  margin: 0px 46px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* row3 */
+
+.main .contact-container .contact-content .contact-text-content .row3 {
+  margin: 20px;
+}
+.main .contact-container .contact-content .contact-text-content .row3 i {
+  font-size: 30px;
+}
+.main .contact-container .contact-content .contact-text-content .row3 span {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px;
+}
+.main .contact-container .contact-content .contact-text-content .row3 p {
+  margin: 0px 55px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* row3 end */
+
+.main .contact-container .contact-content .contact-input-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+}
+
+.main
+  .contact-container
+  .contact-content
+  .contact-input-content
+  .field_name_email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  height: 60%;
+}
+
+.main
+  .contact-container
+  .contact-content
+  .contact-input-content
+  .field_subject {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+.main
+  .contact-container
+  .contact-content
+  .contact-input-content
+  .field_message {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+
+.main .contact-container .contact-content .contact-input-content input {
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  outline-color: rgba(0, 0, 255, 0.5);
+}
+
+.main .contact-container .contact-content .contact-input-content .send-btn {
+  display: grid;
+  justify-content: start;
+  height: 20px;
+  width: 200px;
+}
+.main .contact-container .contact-content .contact-input-content .send-btn {
+  display: grid;
+  justify-content: start;
+  height: 20px;
+  width: 200px;
+}
+
+.main
+  .contact-container
+  .contact-content
+  .contact-input-content
+  .send-btn
+  button {
+  outline-style: none;
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 22px;
+  margin-top: 20px;
+  font-weight: 500;
+  border: 2px solid rgba(0, 0, 255, 0.8);
+  transition: all 0.3 ease;
+}
+.main
+  .contact-container
+  .contact-content
+  .contact-input-content
+  .send-btn
+  button:hover {
+  background: none;
+  color: blue;
+  outline-color: rgba(0, 0, 255, 0.8);
+}
+.main .contact-container .contact-content .contact-input-content .scroll-up {
+  display: none;
+  justify-self: end;
+  width: 10px;
+  margin: 0px 0px;
+  position: relative;
+  top: 10%;
+}
+.main .contact-container .contact-content .contact-input-content .scroll-up i {
+  font-size: 36px;
+  background: rgba(0, 0, 255, 0.8);
+  padding: 5px 3px;
+  border-radius: 25%;
+  position: fixed;
+  border: 2px solid rgba(0, 0, 255, 0.8);
+  bottom: 6%;
+  cursor: pointer;
+  color: snow;
+}
+
+@media (max-width: 1220px) {
+  .main .contact-container .contact-title p {
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .main .contact-container .contact-title span {
+    font-weight: 600;
+    font-size: 50px;
+  }
+}
